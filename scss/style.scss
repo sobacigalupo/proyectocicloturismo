@@ -1,0 +1,179 @@
+@import "colores";
+@import "propiedades";
+@import "fraseproyecto";
+@import "header";
+@import "footer";
+
+@mixin tablas {
+    color: $color2;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    line-height: 1,7;
+    letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 300;
+}
+
+@mixin general ($wid, $heig, $marg) {
+    width:$wid;
+    height: $heig;
+    margin: $marg;
+}
+
+*{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* propiedades que corresponden a index*/
+
+.fotosIndex{
+    width: 60%;
+    height: auto;
+    padding: 20px;
+    transition: all linear 0.4s; 
+
+}
+.fotosIndex:hover{
+    transform:scale(1.05 ,1.05);
+}
+
+.carousel {
+    @include general (80%, 80%, auto)
+}
+
+/*propuedades que corresponden a Guale*/
+.caja{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.guale{
+    padding: 20px;
+    width: 100%;
+    justify-items: center;
+    transition: all linear 0.4s; 
+}
+
+.guale:hover{
+    transform:scale(1.1,1.1);
+}
+.caja__atractivos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.caja__atractivos--atractivo img{
+    @include general (250px, 250px, 10px);
+    object-fit: cover;
+    padding: 10px; 
+}
+.caja__atractivos--atractivo{
+    transition: all linear 0.4s; 
+}
+
+.caja__atractivos--atractivo:hover{
+    transform:scale(1.2, 1.2);
+}
+video{
+    @include general (60%, auto, 10px);
+    justify-items: center;
+    margin: 10px;
+}
+@media screen and (max-width: 880px){
+    .caja__atractivos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    video{
+        width: 80%;
+    }
+}
+@media screen and (max-width: 582px){
+    .guale{
+        width: 100%;
+    }
+    .caja__atractivos{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: center;
+    }
+    video{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 388px){
+    audio{
+        width: 240px;
+    }
+    .atractivo:hover{
+        border: none;
+    }
+    .guale:hover{
+        border: none;
+    }
+}
+/* propiedades que corresponden a Circuito*/
+.circuito{
+    margin: 30px;
+}
+.circuito iframe{
+    transition: all linear 0.4s; 
+}
+
+.circuito iframe:hover{
+    transform:scale(1.1, 1.1);
+}
+
+@media screen and (max-width: 800px){
+    .circuito iframe{
+        width: 100%;
+        margin: auto;
+    }
+}
+/*propiedades que corresponden a Información*/
+.caja{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.caja__table{
+    border-style: inherit;
+}
+.caja__table--colorLista{
+    color: $color2;
+    }
+
+li{
+    list-style-position: inside;
+    list-style-type: none
+}
+
+td{
+    padding: 10px
+}
+
+th {
+    color: $color2;
+}
+
+tr{
+    @include tablas;
+}
+
+/*propiedades que corresponden a proyecto*/
+fieldset{
+    @include tablas;
+}
+
+
+

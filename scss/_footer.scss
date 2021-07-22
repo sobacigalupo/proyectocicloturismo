@@ -1,0 +1,24 @@
+/*propiedades que corresponden al footer*/
+footer{
+    background-color: $bgcolormain;
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px 20px;
+    background-image: linear-gradient(to bottom, $bgcolormain, #6e6763ce);
+}
+
+.iconos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+footer img:hover{
+    transition: all linear 0.2s;
+    background-color: $bgcolornav;
+    padding: 6px;
+    border-radius: 30%;
+}
+.iconosIndividuales{
+    margin: 0px 6px 0px 6px;
+}

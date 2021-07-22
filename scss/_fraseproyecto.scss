@@ -1,0 +1,55 @@
+/*propiedades que corresponden a la frase en proyecto*/
+
+@mixin letraFrase ($colorFrase){
+    color: $colorFrase;
+    font-family: 'Handlee', cursive;
+    font-weight: bold;
+    animation: fadeIn;
+    animation-duration: 3s;
+}
+
+.contenedorPadre{
+    width: 80%;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(2,auto);
+    grid-template-areas:
+        "frase"
+        "hijo";        
+    align-items:center;
+}
+.contenedorPadre__contenedorHijo{
+    width: auto;
+    display: grid;
+    justify-items: center;
+}
+.contenedorPadre__contenedorHijo__frase{
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    grid-template-rows: repeat(4, auto)
+        "frase"
+        "frase"
+        "frase"
+        "frase";
+    justify-items: center;
+}
+
+.contenedorPadre__contenedorHijo__frase--peque{
+    @include letraFrase(#795548);
+    font-size: 20px;
+    align-items: stretch;
+}
+.contenedorPadre__contenedorHijo__frase--mediana{
+    @include letraFrase (#6d4c41);
+    font-size: 22px;
+    padding: 1px;
+}
+.contenedorPadre__contenedorHijo__frase--grande{
+    @include letraFrase(#3e2723);
+}
+.contenedorPadre__contenedorHijo__frase--grande h1{
+    padding: 0;
+    font-size: 24px;
+    font-family: 'Handlee', cursive;
+}

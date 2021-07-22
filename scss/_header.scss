@@ -1,0 +1,90 @@
+/* propiedades que corresponden al header*/
+
+.encabezado{
+    background-color: $bgcolormain;
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.sectionEncabezado{
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    animation: slideInDown;
+    animation-duration: 3s;
+    z-index: 1;
+}
+.logo{
+    width: 150px;
+}
+
+nav{
+    width: auto;
+    height: auto;
+    animation: slideInDown;
+    animation-duration: 3s;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+nav ul > li{
+    display: inline-block;
+
+    position: relative;
+}
+
+ul > li > a{
+    display: block;
+    font-family: 'Montserrat Alternates', sans-serif ;
+    margin: 3px;
+}
+    
+ul li:hover ul {
+    display:block;
+    
+}
+    
+nav li a:hover{
+    transition: all linear 0.3s;
+    background-color: $bgcolornav;
+}
+.nav-link.active{
+    font-family: 'Montserrat Alternates', sans-serif ;
+    color: $color2 !important;
+    padding: 8px;   
+    background-color: $bgcolornav !important;
+}
+.menú{
+    color: $color2;
+}
+.menú:hover{
+    color: $color2;
+}
+.submenú{
+    position: absolute;
+    display: none;
+}
+.submenú li{
+    margin: 3px;
+    background-color: $bgcolormain ;
+}
+.submenú li a{
+    display: block;
+    padding: 7px;
+    text-decoration: none;
+    color: $color2;
+}
+ul{
+    padding-left: 0px;
+}
+
+.submenú li a:hover{
+    display: block;
+}
+

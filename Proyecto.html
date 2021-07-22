@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Si te interesa saber más en profundidad sobre el proyecto o su desarrollo como tal, te invito a que dejes tus datos y comentarios. También podes dejar tu sugererencia para que esta web alcance el mayor y mejor beneficio para quien lo lea.">
+    <meta name="keywords" content="cicloturismo bicicleta viajar circuito atractivos turismo proyecto">
+    <link rel="stylesheet" href="../cicloturismo/hoja de estilo/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../cicloturismo/style.css/style.css">
+    <title>El proyecto</title>
+</head>
+<body>
+    <header class="encabezado">
+        <section class="sectionEncabezado"><a href="../cicloturismo/index.html"><img class="logo animate__animated animate__slideInDown" src="../cicloturismo/imágenes/logoo.png" alt="logo "></a></section>
+        <section class="sectionEncabezado">
+            <nav class="navbar navbar-expand-sm bg-transparent">
+                <div class="container">
+                    <ul class="navbar-nav animate__animated animate__slideInDown">
+                        <li class="nav-item active menú">
+                            <a class="nav-link menú btn btn-round" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown menú">
+                            <a class="nav-link dropdown-toggle menú btn btn-round" href="Guale.html"> Guale </a>
+                                <ul class="submenú">
+                                    <li><a class="btn btn-round menú" href="Guale.html#atractivos">Atractivos</a></li>
+                                </ul>
+                        </li>
+                        <li class="nav-item menú">
+                            <a class="nav-link menú btn btn-round" href="Circuito.html">Circuito</a>
+                        </li>
+                        <li class="nav-item menú">
+                        <a class="nav-link menú btn btn-round" href="Información.html">Información</a>
+                        </li>
+                        <li class="nav-item dropdown menú">
+                            <a class="nav-link dropdown-toggle menú btn btn-round" href="Proyecto.html">Proyecto</a>
+                                <ul class= "submenú">
+                                    <li><a class="btn btn-round menú" href="Proyecto.html#contactános">Contactános</a></li>
+                                    <li><a class="btn btn-round menú" href="Proyecto.html#acercaDelSitio">Acerca del sitio</a></li>
+                                </ul>
+                        </li>
+                    </ul>
+                </div>
+            </nav>   
+        </section>
+    </header>
+    <!--sección para dejar datos--> 
+    <main>
+        <div class="contenedorPadre">
+            <div class="contenedorPadre__contenedorHijo__frase animate__animated animate__fadeIn">
+                <div class="contenedorPadre__contenedorHijo__frase--peque"><h3>"la  vida  es  como andar en bicicleta,</h3></div>
+                <div class="contenedorPadre__contenedorHijo__frase--mediana"><h3>para mantener el equilibrio</h3></div>
+                <div class="contenedorPadre__contenedorHijo__frase--grande"><h1>debes seguir avanzando"</h1></div>
+                <div class="contenedorPadre__contenedorHijo__frase--peque"><h3>Albert Einstein</h3></div>
+            </div>
+        </div>
+        <section class= "caja">
+            <div>
+                <form action="">
+                    <fieldset>
+                        <legend id="contactános">Contactános</legend>
+                        <div>
+                            <label for="nombre">Nombre</label>
+                            <input type="text" name="nombre">
+                        </div>
+                        <div>
+                            <label for="apellido">Apellido</label>
+                            <input type="text" name="apellido">
+                        </div>
+                        <div>
+                            <label for="email">Email</label>
+                            <input type="email" name="email" placeholder="escribe tu correo electrónico">
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comentarios">Dejanos tu comentario</label> <br>
+                            <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="género">Selecciona tu género</label>
+                            <input type="radio" value="mujer" name="género"> Mujer
+                            <input type="radio" value="hombre" name="género"> Hombre
+                            <input type="radio" value="sin especificar" name="género"> Sin especificar
+                        </div>
+                        <div>
+                            <label for="nacionalidad">Selecciona tu nacionalidad</label>
+                            <select name="nacionalidad">
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Paraguay">Paraguay</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label for="información">¿Querés recibir más información?</label>
+                            <input type="checkbox" name="información">
+                        </div>
+                        <br>
+                        <div>
+                            <input type="submit" value="Enviar consulta">
+                        </div>
+                        <div>
+                            <input type="reset" value="Limpiar consulta">
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+            
+        <section class="parrafo" id="acercaDelSitio">
+            <h1><b>Acerca del sitio</b></h1>
+            <p>Este sitio web fue creado bajo la finalidad de poner en práctica los conocimientos aprendidos en el curso de <strong>Desarrollo Web</strong> en <strong>Coder House</strong>. Más allá de esto, se deja a la vista el interés personal de fomentar la actividad cicloturística en la ciudad de Gualeguaychú. Esto es así dado que la creadora del sitio se encuentra desarrollando su Tesis de grado, investigando tal tema en cuestión, para obtener el titulo de Licenciada en Turismo.</p>
+            <p>La presente web es un claro ejemplo de combinar la formación acádemica de años con un incipiente interés en el mundo IT. Éste último surje a partir de un estado de curiosidad, con el objetivo de reinventar en un nueva área y alcanzar, de esta manera, el máximo beneficio del conjunto de ambos rubros.</p>
+            <p><strong>Gracias por visitar el sitio</strong>, espero hayan disfrutado el recorrido🚴‍♂️</p>
+        </section>
+    </main>
+    <footer>
+        <h6 class="animate__animated animate__slideInLeft">Página hecha por Sofía Bacigalupo</h6>
+        <section class="iconos">
+            <a class="iconosIndividuales" href="https://www.instagram.com/sobacigalupo/" target="_blank"> <img src="https://img.icons8.com/wired/30/000000/instagram-new.png"></a>
+            <a class="iconosIndividuales" href="https://www.linkedin.com/in/sofia-bacigalupo/" target="_blank"><target="_blank"><img src="https://img.icons8.com/wired/30/000000/linkedin.png"/></a>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
