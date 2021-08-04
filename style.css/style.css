@@ -2,10 +2,8 @@
 /*propiedades de diseño general*/
 body {
   background-color: #d3c0b2;
-  margin: 30px;
-  background-image: url("http://127.0.0.1:5500/pruebas%20coder/cicloturismo/imágenes/puente1.jpg");
-  background-size: cover;
-  background-attachment: fixed;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 main {
@@ -14,8 +12,11 @@ main {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 10px;
   width: 100%;
+}
+
+.principal {
+  position: relative;
 }
 
 hr {
@@ -28,7 +29,6 @@ h1 {
   font-weight: 150%;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
-  padding: 30px;
 }
 
 h2 {
@@ -36,7 +36,6 @@ h2 {
   font-weight: 100px;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
-  padding: 10px;
 }
 
 p {
@@ -61,7 +60,7 @@ p {
 
 h6 {
   text-align: center;
-  color: #534a44;
+  color: #49403b;
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -129,14 +128,75 @@ strong, b {
 }
 
 /* propiedades que corresponden al header*/
-.encabezado {
-  background-color: #c4bfbbce;
+.background {
+  min-height: 100vh;
+  height: 100%;
   width: 100%;
-  height: auto;
-  margin-bottom: 10px;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  position: relative;
+}
+
+.background::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: opacity(60%);
+  background-size: cover;
+  background-image: url("../imágenes/puenteParque.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.backgroundVideo::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: opacity(60%);
+  background-size: cover;
+  background-image: url("../imágenes/gualePedalea.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.informacion::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: opacity(60%);
+  background-size: cover;
+  background-image: url("../imágenes/oficinaTurismo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
+}
+
+.proyecto::before {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  filter: opacity(60%);
+  background-size: cover;
+  background-image: url("../imágenes/proyecto.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position-x: center;
+  background-position-y: center;
 }
 
 .sectionEncabezado {
@@ -148,15 +208,51 @@ strong, b {
   z-index: 1;
 }
 
+.sectionEncabezado a {
+  max-width: 200px;
+}
+
 .logo {
-  width: 150px;
+  width: 100%;
+  margin: 10%;
 }
 
 nav {
   width: auto;
   height: auto;
+  margin: 10%;
   animation: slideInDown;
   animation-duration: 3s;
+}
+
+nav::before {
+  background: #786969;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.3rem;
+  left: 0;
+  margin: 0 0 0.7rem 0;
+  padding: 0 .9rem .3rem 7.2rem;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  z-index: -1;
+}
+
+.backgroundVideo nav::before {
+  background: none;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.3rem;
+  left: 0;
+  margin: 0 0 0.7rem 0;
+  padding: 0 .9rem .3rem 7.2rem;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  z-index: -1;
 }
 
 nav ul {
@@ -182,22 +278,20 @@ ul li:hover ul {
 
 nav li a:hover {
   transition: all linear 0.3s;
-  background-color: #D7D2CE;
 }
 
 .nav-link.active {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #534a44 !important;
+  color: #49403b !important;
   padding: 8px;
-  background-color: #D7D2CE !important;
 }
 
 .menú {
-  color: #534a44;
+  color: white;
 }
 
 .menú:hover {
-  color: #534a44;
+  color: white;
 }
 
 .submenú {
@@ -207,14 +301,13 @@ nav li a:hover {
 
 .submenú li {
   margin: 3px;
-  background-color: #c4bfbbce;
 }
 
 .submenú li a {
   display: block;
   padding: 7px;
   text-decoration: none;
-  color: #534a44;
+  color: white;
 }
 
 ul {
@@ -223,6 +316,92 @@ ul {
 
 .submenú li a:hover {
   display: block;
+}
+
+.principal {
+  position: relative;
+}
+
+.principalSub h1 {
+  font-family: inherit;
+  color: #ffffff;
+  font-family: 'Yrsa', serif;
+  font-size: 60px;
+  letter-spacing: 0px;
+  font-weight: 100;
+  margin-top: 17.5%;
+  text-align: end;
+  text-shadow: -1.5px 0 #786969, 0 1.5px #786969, 1.5px 0 #786969, 0 -1.5px #786969;
+  margin-right: 2%;
+  animation: slideInLeft;
+  animation-duration: 3s;
+}
+
+.principalSub h2 {
+  font-family: inherit;
+  color: white;
+  font-family: 'Yrsa', serif;
+  letter-spacing: 2px;
+  font-weight: 40;
+  text-shadow: -1px 0 #786969, 0 1px #786969, 1px 0 #786969, 0 -1px #786969;
+  margin-top: -1.5%;
+  margin-left: 33%;
+  z-index: 2;
+  position: relative;
+  animation: slideInLeft;
+  animation-duration: 3s;
+}
+
+.principalSub h2::before {
+  background: #6C4F48;
+  bottom: -0.8rem;
+  content: "";
+  display: block;
+  height: 1.3rem;
+  left: 0;
+  margin: 0 0 0.7rem 0;
+  padding: 0 .9rem .3rem 7.2rem;
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+
+.backgroundVideo {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.backgroundVideo #video_background {
+  object-fit: cover;
+  min-width: 100%;
+  top: 0;
+  height: 100%;
+  position: absolute;
+}
+
+.backgroundVideo .encabezado {
+  position: relative;
+  margin-top: none;
+  background: rgba(2, 2, 2, 0.2);
+  z-index: 1;
+}
+
+.backgroundVideo .encabezado .logo {
+  margin: 0px;
+  width: 130px;
+}
+
+.backgroundVideo .sectionEncabezado .navbar {
+  margin: 0;
+  padding: 30px;
+}
+
+.backgroundVideo .sectionEncabezado {
+  margin: 0;
+  width: 100%;
+  height: auto;
 }
 
 /*propiedades que corresponden al footer*/
@@ -286,17 +465,6 @@ footer img:hover {
   align-items: center;
 }
 
-.guale {
-  padding: 20px;
-  width: 100%;
-  justify-items: center;
-  transition: all linear 0.4s;
-}
-
-.guale:hover {
-  transform: scale(1.1, 1.1);
-}
-
 .caja__atractivos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -308,23 +476,18 @@ footer img:hover {
   height: 250px;
   margin: 10px;
   object-fit: cover;
-  padding: 10px;
+  padding: 7px;
+  filter: brightness(0.7) contrast(0.7) grayscale(0.23);
 }
 
 .caja__atractivos--atractivo {
   transition: all linear 0.4s;
 }
 
-.caja__atractivos--atractivo:hover {
+.caja__atractivos--atractivo img:hover {
   transform: scale(1.2, 1.2);
-}
-
-video {
-  width: 60%;
-  height: auto;
-  margin: 10px;
-  justify-items: center;
-  margin: 10px;
+  transition: all 1.8s 4.8s ease, all 1.3s 0s ease;
+  filter: none;
 }
 
 @media screen and (max-width: 880px) {
@@ -369,7 +532,6 @@ video {
 }
 
 .circuito iframe {
-  margin-top: 20px;
   transition: all linear 0.4s;
 }
 
@@ -399,7 +561,7 @@ video {
 }
 
 .caja__table--colorLista {
-  color: #534a44;
+  color: #49403b;
 }
 
 li {
@@ -412,11 +574,11 @@ td {
 }
 
 th {
-  color: #534a44;
+  color: #49403b;
 }
 
 tr {
-  color: #534a44;
+  color: #49403b;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   line-height: 1,7;
@@ -427,7 +589,7 @@ tr {
 
 /*propiedades que corresponden a proyecto*/
 fieldset {
-  color: #534a44;
+  color: #49403b;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   line-height: 1,7;

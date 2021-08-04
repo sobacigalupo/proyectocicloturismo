@@ -1,10 +1,8 @@
 /*propiedades de diseño general*/
 body {
     background-color: $bgcolor;
-    margin: 30px;
-    background-image: url("http://127.0.0.1:5500/pruebas%20coder/cicloturismo/imágenes/puente1.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    max-width: 100%;
+    overflow-x: hidden;
 }
 
 main{
@@ -13,8 +11,10 @@ main{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 10px;
     width: 100%;
+}
+.principal{
+    position: relative;
 }
 
 hr{
@@ -27,14 +27,12 @@ h1{
     font-weight: 150%;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
-    padding: 20px;
 }
 h2{
     color: $color;
     font-weight: 100px;
     font-family: 'Montserrat Alternates', sans-serif;
     text-align: center;
-    padding: 10px;
 }
 
 p{

@@ -53,16 +53,7 @@
     justify-content: center;
     align-items: center;
 }
-.guale{
-    padding: 20px;
-    width: 100%;
-    justify-items: center;
-    transition: all linear 0.4s; 
-}
 
-.guale:hover{
-    transform:scale(1.1,1.1);
-}
 .caja__atractivos{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -71,20 +62,23 @@
 .caja__atractivos--atractivo img{
     @include general (250px, 250px, 10px);
     object-fit: cover;
-    padding: 10px; 
+    padding: 7px; 
+    filter: brightness(0.7) contrast(0.7) grayscale(0.23);
 }
 .caja__atractivos--atractivo{
     transition: all linear 0.4s; 
 }
 
-.caja__atractivos--atractivo:hover{
+.caja__atractivos--atractivo img:hover{
     transform:scale(1.2, 1.2);
+    -webkit-transition: all 1.8s 4.8s ease, all 1.3s 0s ease;
+    -moz-transition: all 1.8s 4.8s ease, all 1.3s 0s ease;
+    -o-transition: all 1.8s 4.8s ease, all 1.3s 0s ease;
+    transition: all 1.8s 4.8s ease, all 1.3s 0s ease;
+    filter: none;
 }
-video{
-    @include general (60%, auto, 10px);
-    justify-items: center;
-    margin: 10px;
-}
+    
+
 @media screen and (max-width: 880px){
     .caja__atractivos{
         display: grid;
