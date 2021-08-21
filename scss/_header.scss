@@ -74,7 +74,7 @@
     position: absolute; 
     filter: opacity(60%);
     background-size: cover;
-    background-image: url("../imágenes/proyecto.jpg");
+    background-image: url("../imágenes/cicloturismo2.png");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -107,19 +107,22 @@ nav{
     animation: slideInDown;
     animation-duration: 3s;
 }
-nav::before{
-        background: #786969;
-        bottom: 0;
-        content: "";
-        display: block;
-        height: 1.3rem;
-        left: 0;
-        margin: 0 0 0.7rem 0;
-        padding: 0 .9rem .3rem 7.2rem;
-        position: absolute;
-        top: auto;
-        width: 100%;
-        z-index: -1;
+@media (min-width:576px) {
+    
+    nav::before{
+            background: #786969;
+            bottom: 0;
+            content: "";
+            display: block;
+            height: 1.3rem;
+            left: 0;
+            margin: 0 0 0.7rem 0;
+            padding: 0 .9rem .3rem 7.2rem;
+            position: absolute;
+            top: auto;
+            width: 100%;
+            z-index: -1;
+    }
 }
 .backgroundVideo nav::before{
     background: none;
@@ -154,8 +157,19 @@ ul > li > a{
 }
     
 ul li:hover ul {
-    display:block;
-    
+    display:block;   
+    background-color: rgba(2, 2, 2, 0.459);
+}
+@media (max-width: 576px) {
+    ul li:hover ul {
+
+        display:flex;
+        flex-direction: column;  
+        position: relative;
+    }
+}
+
+@media (max-width: 576px) {
 }
     
 nav li a:hover{
@@ -191,8 +205,15 @@ ul{
     padding-left: 0px;
 }
 
-.submenú li a:hover{
-    display: block;
+// .submenú li a:hover{
+//     display: block;
+// }
+
+@media (max-width: 576px) {
+    // .submenú li a:hover{
+    //     display: block;
+    //     margin-left: 100%;
+    // }   
 }
 
 .principal{

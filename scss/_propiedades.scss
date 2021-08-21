@@ -12,6 +12,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     width: 100%;
+    padding: 35px;
 }
 .principal{
     position: relative;
@@ -36,7 +37,7 @@ h2{
 }
 
 p{
-    color: $color;
+    color: $color2;
     font-family: 'Roboto', sans-serif; 
     line-height: 1,7;
     letter-spacing: 1px;

@@ -7,7 +7,7 @@ body {
 }
 
 main {
-  background-color: #0e0e0ece;
+  background-color: #c4bfbbce;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,6 @@ main {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  padding: 35px;
 }
 
 .principal {
@@ -34,21 +33,21 @@ hr {
 }
 
 h1 {
-  color: #9e6941;
+  color: #5c402a;
   font-weight: 150%;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
 }
 
 h2 {
-  color: #9e6941;
+  color: #5c402a;
   font-weight: 100px;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
 }
 
 p {
-  color: #eaeaea;
+  color: #5c402a;
   font-family: 'Roboto', sans-serif;
   line-height: 1,7;
   letter-spacing: 1px;
@@ -69,7 +68,7 @@ p {
 
 h6 {
   text-align: center;
-  color: #eaeaea;
+  color: #49403b;
   font-weight: bold;
   font-family: 'Montserrat Alternates', sans-serif;
 }
@@ -112,7 +111,7 @@ strong, b {
 }
 
 .contenedorPadre__contenedorHijo__frase--peque {
-  color: #856053;
+  color: #795548;
   font-family: 'Handlee', cursive;
   font-weight: bold;
   -webkit-animation: fadeIn;
@@ -126,7 +125,7 @@ strong, b {
 }
 
 .contenedorPadre__contenedorHijo__frase--mediana {
-  color: #815b4e;
+  color: #6d4c41;
   font-family: 'Handlee', cursive;
   font-weight: bold;
   -webkit-animation: fadeIn;
@@ -138,7 +137,7 @@ strong, b {
 }
 
 .contenedorPadre__contenedorHijo__frase--grande {
-  color: #4d302b;
+  color: #3e2723;
   font-family: 'Handlee', cursive;
   font-weight: bold;
   -webkit-animation: fadeIn;
@@ -263,21 +262,19 @@ nav {
           animation-duration: 3s;
 }
 
-@media (min-width: 576px) {
-  nav::before {
-    background: #786969;
-    bottom: 0;
-    content: "";
-    display: block;
-    height: 1.3rem;
-    left: 0;
-    margin: 0 0 0.7rem 0;
-    padding: 0 .9rem .3rem 7.2rem;
-    position: absolute;
-    top: auto;
-    width: 100%;
-    z-index: -1;
-  }
+nav::before {
+  background: #786969;
+  bottom: 0;
+  content: "";
+  display: block;
+  height: 1.3rem;
+  left: 0;
+  margin: 0 0 0.7rem 0;
+  padding: 0 .9rem .3rem 7.2rem;
+  position: absolute;
+  top: auto;
+  width: 100%;
+  z-index: -1;
 }
 
 .backgroundVideo nav::before {
@@ -318,20 +315,6 @@ ul > li > a {
 
 ul li:hover ul {
   display: block;
-  background-color: rgba(2, 2, 2, 0.459);
-}
-
-@media (max-width: 576px) {
-  ul li:hover ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    position: relative;
-  }
 }
 
 nav li a:hover {
@@ -341,7 +324,7 @@ nav li a:hover {
 
 .nav-link.active {
   font-family: 'Montserrat Alternates', sans-serif;
-  color: #eaeaea !important;
+  color: #49403b !important;
   padding: 8px;
 }
 
@@ -371,6 +354,10 @@ nav li a:hover {
 
 ul {
   padding-left: 0px;
+}
+
+.submenú li a:hover {
+  display: block;
 }
 
 .principal {
@@ -466,10 +453,12 @@ ul {
 
 /*propiedades que corresponden al footer*/
 footer {
-  background-color: #0e0e0ece;
+  background-color: #c4bfbbce;
   width: 100%;
   margin-top: 10px;
-  padding: 18px 20px;
+  padding: 7px 20px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#c4bfbbce), to(#6e6763ce));
+  background-image: linear-gradient(to bottom, #c4bfbbce, #6e6763ce);
 }
 
 .iconos {
@@ -485,11 +474,6 @@ footer {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-footer img {
-  -webkit-transition: all linear 0.2s;
-  transition: all linear 0.2s;
 }
 
 footer img:hover {
@@ -670,7 +654,7 @@ footer img:hover {
 }
 
 .caja__table--colorLista {
-  color: #eaeaea;
+  color: #49403b;
 }
 
 li {
@@ -683,11 +667,11 @@ td {
 }
 
 th {
-  color: #eaeaea;
+  color: #49403b;
 }
 
 tr {
-  color: #eaeaea;
+  color: #49403b;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   line-height: 1,7;
@@ -698,7 +682,7 @@ tr {
 
 /*propiedades que corresponden a proyecto*/
 fieldset {
-  color: #eaeaea;
+  color: #49403b;
   font-family: 'Montserrat Alternates', sans-serif;
   text-align: center;
   line-height: 1,7;
@@ -706,3 +690,4 @@ fieldset {
   font-size: 15px;
   font-weight: 300;
 }
+/*# sourceMappingURL=style.css.map */

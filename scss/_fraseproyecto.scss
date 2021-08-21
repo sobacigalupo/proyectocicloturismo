@@ -36,17 +36,17 @@
 }
 
 .contenedorPadre__contenedorHijo__frase--peque{
-    @include letraFrase(#795548);
+    @include letraFrase(#856053);
     font-size: 20px;
     align-items: stretch;
 }
 .contenedorPadre__contenedorHijo__frase--mediana{
-    @include letraFrase (#6d4c41);
+    @include letraFrase (#815b4e);
     font-size: 22px;
     padding: 1px;
 }
 .contenedorPadre__contenedorHijo__frase--grande{
-    @include letraFrase(#3e2723);
+    @include letraFrase(#4d302b);
 }
 .contenedorPadre__contenedorHijo__frase--grande h1{
     padding: 0;

@@ -3,8 +3,8 @@ footer{
     background-color: $bgcolormain;
     width: 100%;
     margin-top: 10px;
-    padding: 7px 20px;
-    background-image: linear-gradient(to bottom, $bgcolormain, #6e6763ce);
+    padding: 18px 20px;
+    // background-image: linear-gradient(to bottom, $bgcolormain, #6e6763ce);
 }
 
 .iconos{
@@ -13,6 +13,11 @@ footer{
     flex-wrap: wrap;
     justify-content: center;
 }
+footer img{
+    transition: all linear 0.2s;
+    
+}
+
 footer img:hover{
     transition: all linear 0.2s;
     background-color: $bgcolornav;
