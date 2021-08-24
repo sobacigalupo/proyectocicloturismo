@@ -58,7 +58,7 @@
     position: absolute; 
     filter: opacity(60%);
     background-size: cover;
-    background-image: url("../imágenes/oficinaTurismo.jpg");
+    background-image: url("../imágenes/peopleBike.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
@@ -304,9 +304,9 @@ ul{
     width: 100%;
     height: auto;
 }
-// .backgroundVideo .sectionEncabezado .navbar .container{
-//     margin-bottom: 12%;
-// }
-.backgroundVideo .encabezado .sectionEncabezado{
-    // background: rgba(2,2,2,0.2);
+
+
+.btn:focus{
+    box-shadow: none;
+    color: white;
 }

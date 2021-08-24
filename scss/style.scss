@@ -41,8 +41,10 @@
 }
 
 .carousel {
-    @include general (80%, 80%, auto)
+    @include general (80%, 80%, auto);
+    min-width: 300px;
 }
+
 
 /*propuedades que corresponden a Guale*/
 .caja{
